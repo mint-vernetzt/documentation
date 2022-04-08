@@ -74,6 +74,10 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'm',
+          src: 'img/logo-big.svg',
+        },
         links: [
           {
             title: 'Docs',
