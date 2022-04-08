@@ -4,6 +4,7 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +19,7 @@
   --ifm-color-primary-lighter: #184baa;
   --ifm-color-primary-lightest: #1b55c0;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Source Sans Pro', sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -44,6 +46,10 @@
 
 .iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-IconExternalLink-styles-module {
   display: none;
+}
+
+.iconLanguage_node_modules-\@docusaurus-theme-classic-lib-next-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
+  display: inline;
 }
 
 /* GitHub */

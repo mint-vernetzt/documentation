@@ -66,6 +66,10 @@ const config = {
             className: 'header-github-link',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -116,6 +120,15 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'de'],
+        localeConfigs: {
+          en: {
+            htmlLang: 'en-GB',
+          },
+        },
       },
     }),
 
