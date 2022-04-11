@@ -4,16 +4,16 @@ sidebar_position: 1
 
 # Welcome to the Website!
 
-Hello there
+Hello there!
 
 t  
 h  
 i  
-s  
+s
 
 
 i  
-s  
+s
 
 c  
 o  
