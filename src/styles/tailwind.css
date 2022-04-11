@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-neutral-600;
+  }
+
+  /** Heading **/
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary mb-2 leading-tight lg:leading-none;
+  }
+  h1,
+  .h1 {
+    @apply text-5xl lg:text-7xl mb-4;
+  }
+  h2,
+  .h2 {
+    @apply text-4xl lg:text-6xl lg:mb-4;
+  }
+  h3,
+  .h3 {
+    @apply text-2xl lg:text-5xl;
+  }
+  h4,
+  .h4 {
+    @apply text-lg lg:text-3xl;
+  }
+  h5,
+  .h5 {
+    @apply text-base lg:text-xl;
+  }
+  h6,
+  .h6 {
+    @apply text-base lg:text-lg mb-1;
+  }
+  .h0 {
+    @apply text-6xl lg:text-8xl font-bold;
+  }
+  .h0 + h5 {
+    @apply font-bold;
+  }
+
+  p {
+    @apply leading-6 mb-6;
+  }
+  ul {
+    @apply leading-6 mb-6;
+  }
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+div p:last-child,
+div ul:last-child {
+  @apply mb-0;
+}
+
+li::marker {
+  @apply text-neutral-600;
+}
+
+.header-section nav a[aria-current="page"] {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 253, var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(21, 65, 148, var(--tw-bg-opacity));
+}
+
+section.container header {
+  @apply mb-10;
+}
+
+section.container header:not(.text-left) {
+  @apply md:text-center;
+}
+
+section.container header p.lead {
+  @apply leading-6 lg:text-xl text-neutral-600;
+}
+
+section.container header:not(.text-left) p.lead {
+  /*@apply md:w-3/4 md:mx-auto;*/
+}
+
+.blog-post-content p {
+  @apply mb-6 text-neutral-600;
+}
+
+.blog-post-content p:last-child {
+  @apply mb-0;
+}
+
+.wp-block-create-block-schedule-item div p a,
+.blog-post-content p a,
+.event-description p a,
+.page-content p a {
+  @apply text-lilac-500 font-bold hover:underline;
+}
+
+.blog-post-content li a {
+  @apply text-lilac-500 font-bold hover:underline;
+}
+
+.event-description > ul,
+.wp-block-create-block-schedule-item div ul,
+.blog-post-content ul {
+  @apply list-disc list-outside leading-6 mb-6 pl-5;
+}
+
+ol {
+  @apply list-decimal list-outside leading-6 mb-6 pl-5;
+}
+
+.wp-block-create-block-schedule-item div {
+  @apply pt-2;
+}
+
+.pakt-category > a::before {
+  content: "\276F";
+  @apply text-center transition-all ease-in-out duration-300 w-6 h-6 md:w-8 md:h-8;
+  flex: 0 0 1.5rem;
+}
+
+@screen md {
+  .pakt-category > a::before {
+    flex: 0 0 2rem;
+  }
+}
+
+.pakt-category.active > a::before {
+  transform: rotate(90deg);
+}
+
+.pakt-category.active .pakt-member {
+  max-height: 100%;
+}
+
+.document-list p {
+  @apply font-bold p-0 m-0 text-lg leading-tight;
+}
+
+.btn-primary {
+  @apply px-4 py-3 rounded-lg bg-primary text-neutral-200 font-semibold inline-block;
+}
+
+.btn-white {
+  @apply px-4 py-3 bg-white font-semibold inline-block;
+}
+
+/* Hero Slider Styles */
+
+.next-slide[aria-disabled="true"],
+.prev-slide[aria-disabled="true"] {
+  @apply opacity-40 cursor-not-allowed;
+}
+
+.next-slide svg,
+.prev-slide svg {
+  fill: currentColor !important;
+}
+
+.hero-index,
+.hero-news {
+  height: 540px;
+}
+.hero-index .hero-text {
+  background-image: linear-gradient(
+    to bottom,
+    #efe8e6,
+    #efe8e6 70%,
+    rgba(239, 232, 230, 0) 98%
+  );
+}
+
+.hero-news .hero-text {
+  background-image: linear-gradient(
+    to right,
+    rgba(239, 232, 230, 0.9),
+    rgba(239, 232, 230, 0) 77%,
+    rgba(239, 232, 230, 0) 95%
+  );
+}
+
+@screen md {
+  .hero-index {
+    height: 400px;
+  }
+  .hero-index .hero-text {
+    background-image: linear-gradient(
+      to right,
+      rgba(239, 232, 230, 0.7) 22%,
+      rgba(239, 232, 230, 0) 65%,
+      rgba(239, 232, 230, 0) 69%
+    );
+  }
+  .hero-news .hero-text {
+    background-image: linear-gradient(
+      to right,
+      rgba(239, 232, 230, 0.9),
+      rgba(239, 232, 230, 0) 77%,
+      rgba(239, 232, 230, 0) 95%
+    );
+  }
+  .hero-news {
+    height: 288px;
+  }
+}
+
+@screen lg {
+  .hero-index {
+    height: 660px;
+  }
+  .hero-news {
+    height: 464px;
+  }
+}
+
+.event-list > section > ul > li *:last-child {
+  margin-bottom: 0;
+}
+
+.event-list .event-item {
+  @apply border-b border-neutral-400 last:border-b-0 pt-6 pb-6 lg:pb-8 lg:pt-8;
+}
+
+@screen lg {
+  .event-list .event-item > div {
+    width: 75%;
+  }
+}
+.event-list .event-item p {
+  @apply mb-2;
+}
+
+.event-description {
+  @apply mb-8;
+}
+
+.event-sidebar-navigation li a::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#schedule li.wp-block-create-block-schedule-item {
+  @apply border-b border-neutral-400 last:border-b-0 pl-8 pt-2 pb-4;
+}
+
+#schedule p.to,
+#schedule p.from {
+  @apply inline text-neutral-700 m-0;
+}
+
+#schedule p.to::before {
+  content: "\002D";
+  margin: 0 3px 0 5px;
+}
+
+#schedule > ul > li > h4 {
+  @apply relative;
+}
+
+.zoomimage {
+  top: 130px;
+  left: 170px;
+}
+
+.puzzleimage {
+  top: 264px;
+  left: 45px;
+}
+
+.news-list ul li h4 a::after,
+.event-teaser ul li h4 a::after,
+.event-list li.event-item h4 a::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.max-w-sm {
+  max-width: 400px;
+  margin: 0 auto;
+}

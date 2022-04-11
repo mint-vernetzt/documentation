@@ -5,6 +5,8 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import '/src/styles/tailwind.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -44,15 +46,16 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-IconExternalLink-styles-module {
-  display: none;
-}
-
 .iconLanguage_node_modules-\@docusaurus-theme-classic-lib-next-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
   display: inline;
 }
 
-/* GitHub */
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+/* GitHub Logo */
 .header-github-link:hover {
   opacity: 0.6;
 }
