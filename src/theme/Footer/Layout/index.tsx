@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, {ReactNode} from 'react';
 import type {Props} from '@theme/Footer/Layout';
 
 export default function FooterLayout({
@@ -17,7 +17,7 @@ export default function FooterLayout({
 }: Props): JSX.Element {
   return (
     <footer>
-      <div className='footer-section py-4 lg:py-10 border-t border-neutral-400 overflow-hidden'>
+      <div className='footer-section py-6 lg:py-8 border-t border-neutral-400 overflow-hidden'>
         <div className="container">
           <div className="text-center">
             {links}

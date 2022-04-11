@@ -26,6 +26,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'landing-image': "url('https://mint-vernetzt.de/static/2a84ce6b76effbed4f6dbfeb598ce4c8/af229/Thinkathon-Webseiten-Header.webp')",
+      },
       colors: {
         ...colors,
       },

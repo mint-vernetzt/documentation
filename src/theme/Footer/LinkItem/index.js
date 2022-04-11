@@ -17,7 +17,7 @@ export default function FooterLinkItem({item}) {
   });
   return (
     <Link
-      className=""
+      className="my-2"
       {...(href
         ? {
             href: prependBaseUrlToHref ? normalizedHref : href,

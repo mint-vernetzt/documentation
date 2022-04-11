@@ -37,12 +37,12 @@ const FeatureList: FeatureItem[] = [
         be extended while reusing the same header and footer.
       </>
     ),
-  },
+  }
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col-4')}>
+    <div className='col col-4'>
       <div className="text-center">
         <Svg className="inline h-64 w-64" role="img" />
       </div>
@@ -56,7 +56,7 @@ function Feature({title, Svg, description}: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="pt-8 pb-8">
+    <section className="pt-8 pb-40">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

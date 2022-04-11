@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MINTvernetzt Docs',
   tagline: 'Dinosaurs are cool!',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://developer.mint-vernetzt.de',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -22,6 +22,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -47,8 +48,17 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      announcementBar: {
+        id: 'under-construction',
+        content:
+            '🚧 This page is still under construction. Please check back later.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
         title: 'MINTvernetzt',
+        hideOnScroll: true,
         logo: {
           alt: 'm',
           src: 'img/logo.svg',
@@ -58,16 +68,20 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            className: 'header-github-link',
+            type: 'docsVersionDropdown',
             position: 'right',
           },
           {
             type: 'localeDropdown',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            className: 'header-github-link',
             position: 'right',
           },
         ],
@@ -132,6 +146,9 @@ const config = {
         localeConfigs: {
           en: {
             htmlLang: 'en-GB',
+          },
+          de: {
+            htmlLang: 'de-DE',
           },
         },
       },

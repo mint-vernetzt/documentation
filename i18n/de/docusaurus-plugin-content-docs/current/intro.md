@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Einführung
+# Tutorial Intro (next) (german)
 
 Let's discover **Docusaurus in less than 5 minutes**.
 

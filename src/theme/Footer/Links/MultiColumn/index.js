@@ -26,7 +26,7 @@ function ColumnLinkItem({item}) {
 function Column({column}) {
   return (
     <div className="col mb-3 mt-3 lg:mb-10 lg:mt-5">
-      <div className="text-primary-500"><b>{column.title}</b></div>
+      <div className="text-primary-500 font-semibold">{column.title}</div>
       <ul className="">
         {column.items.map((item, i) => (
           <ColumnLinkItem key={i} item={item} />

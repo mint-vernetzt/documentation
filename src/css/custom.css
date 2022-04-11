@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import '/src/styles/tailwind.css';
+@import '/src/styles/markdown.css';
 
 @tailwind base;
 @tailwind components;
