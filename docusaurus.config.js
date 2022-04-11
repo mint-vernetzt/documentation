@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MINTvernetzt Docs',
   tagline: 'Dinosaurs are cool!',
-  url: 'https://developer.mint-vernetzt.de',
+  url: 'https://developer.mint-vernetzt.de/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
