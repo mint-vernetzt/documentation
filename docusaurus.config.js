@@ -10,7 +10,7 @@ const config = {
   tagline: 'Dinosaurs are cool!',
   url: 'https://developer.mint-vernetzt.de/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // throw
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'MINTvernetzt',
