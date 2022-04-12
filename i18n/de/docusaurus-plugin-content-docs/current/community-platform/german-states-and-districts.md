@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+tags:
+- docs
+- community-platform
+- german
 ---
 
 # Daten der Bundesländer und Landkreise

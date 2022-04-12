@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+tags:
+- docs
+- community-platform
 ---
 
 # States and Districts data

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+tags:
+- docs
+- community-platform
 ---
 
-# Welcome to the Community Platform
+# Welcome to the Docs for the Community-Platform
 
 Hello there!
 

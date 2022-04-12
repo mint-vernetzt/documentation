@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+tags:
+- docs
+- documentation
 ---
 
-# Welcome to documentation of the Documentation
+# Welcome to Docs for the Documentation
 It might seem a little odd to have a documentation page for the documentation itself, but it's actually quite useful
 because that way other team members can more easily document their own code. Here you'll find the basic system used for the documentation
 as well as the customizations made to the default theme.

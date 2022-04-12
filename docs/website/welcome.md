@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+tags:
+- docs
+- website
 ---
 
-# Welcome to the Website!
+# Welcome to the Docs for the Website
 
 Hello there!
 
