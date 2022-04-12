@@ -13,7 +13,7 @@
   h2,
   h3,
   h4,
-  h5,
+  /*h5, Don't style this one, since it's not used as heading but in the admonitions where the color according to the admonition type (info, tip, error, etc.)*/
   h6 {
     @apply text-primary mb-2 leading-tight lg:leading-none;
   }

@@ -2,28 +2,28 @@
 sidebar_position: 2
 ---
 
-# States and Districts data
-The [MINTvernetzt-Community-Platform](www.mint-vernetzt-community.de) provides a feature where the users can select the regions in which they are active. Therefore, we
-needed a list of all states and districts (in this case for Germany), which is exactly what [this package](https://github.com/mint-vernetzt/state-data-prototype) provides. It contains the Prisma schema and a script to generate the data itself.
+# Daten der Bundesländer und Landkreise
+Die [MINTvernetzt-Community-Plattform](https://www.mint-vernetzt-community.de) bietet eine Funktion, bei der die Nutzer die Regionen auswählen können, in denen sie aktiv sind. Deshalb benötigten wir
+eine Liste aller Bundesländer und Landkreise (in diesem Fall für Deutschland), genau das bietet [dieses Paket](https://github.com/mint-vernetzt/state-data-prototype). Es enthält das Prisma-Schema und ein Skript, um die Daten selbst zu erzeugen.
 
-## Dependencies
-The package mainly uses TypeScript and Prisma.
+## Abhängigkeiten
+Das Paket verwendet hauptsächlich TypeScript und Prisma.
 
-The exact requirements can be found in the [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json).
+Eine genaue Auflistung aller Abhängigkeiten finden Sie in der [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json) nachgelesen werden.
 
-## How to use the package yourself
-1. Clone the repository from [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
-2. Create a .env file in the root directory of the repository
-3. Edit the .env file to set the following variables:
+## Wie man das Paket selbst benutzt
+1. Klonen Sie das Repository von [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
+2. Erstellen Sie eine .env-Datei im Stammverzeichnis des Repositorys
+3. Bearbeiten Sie die .env-Datei, um die folgenden Variablen zu setzen:
 ``` bin/bash
 # .env
 DATABASE_URL="dbtype://password:username@localhost:port/german_states_districts?schema=public"
 ```
-4. Run ```prisma migrate dev --create_state_and_district_model_and_relationship``` to create the two tables
-5. Run ```npm start``` to populate the created tables with the german states and districts (or ```npm start -- --help``` for options)
-6. Check you database (and hopefully be happy 😃)
+4. Führen Sie ```prisma migrate dev --create_state_and_district_model_and_relationship``` aus, um die beiden Tabellen zu erstellen
+5. Führen Sie ```npm start``` aus, um die erstellten Tabellen mit den deutschen Bundesländern und Bezirken aufzufüllen (oder ```npm start -- --help``` für andere Optionen)
+6. Prüfen Sie Ihre Datenbank (und sind hoffentlich zufrieden 😃)
 
-## Use example
+## Nutzungsbeispiel
 ``` bash
 user@host:~/.../german-states-and-districts-dataset$ npm start -- --verbose
 $ ts-node load-german-states-and-districts.ts --verbose
@@ -990,7 +990,7 @@ All states with their districts:
 Done in 2.78s.
 ```
 
-## Sources
+## Quellen
 
 ### data/corona-api-06-04-2022.json
 Robert Koch-Institut COVID-19 API - von Marlon Lückert  
@@ -999,5 +999,5 @@ Exact route: [https://api.corona-zahlen.org/districts](https://api.corona-zahlen
 Modifications: prettified with https://jsonformatter.curiousconcept.com/  
 Licence (CC BY 4.0)
 
-## Known issues
-There aren't (yet) any known issues.
+## Bekannte Schwachstellen
+Uns sind (noch) keine Schwachstellen bekannt.

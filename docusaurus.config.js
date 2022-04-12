@@ -64,7 +64,7 @@ const config = {
       announcementBar: {
         id: 'under-construction',
         content:
-            '🚧 This page is still under construction. Please check back later.',
+            '🚧 This page is still under construction. Please check back later. 🚧',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,
@@ -79,7 +79,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'welcome',
             position: 'left',
             label: 'Docs',
           },
@@ -111,8 +111,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Welcome',
+                to: '/docs/welcome',
               },
             ],
           },

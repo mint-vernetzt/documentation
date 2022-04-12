@@ -47,13 +47,14 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.iconLanguage_node_modules-\@docusaurus-theme-classic-lib-next-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
-  display: inline;
-}
-
 a:hover {
   text-decoration: none;
   color: unset;
+}
+
+/* No edit this page button -> hide whole footer */
+.theme-doc-footer {
+  display: none;
 }
 
 /* GitHub Logo */

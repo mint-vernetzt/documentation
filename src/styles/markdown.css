@@ -66,6 +66,13 @@
   font-weight: 600;
 }
 
+.markdown .admonition h5 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: unset;
+}
+
 .markdown h6 {
   font-size: 1.1rem;
   font-weight: 600;
