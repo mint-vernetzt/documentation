@@ -146,10 +146,7 @@ const config = {
         localeConfigs: {
           en: {
             htmlLang: 'en-GB',
-          },
-          de: {
-            htmlLang: 'de-DE',
-          },
+          }
         },
       },
     }),
