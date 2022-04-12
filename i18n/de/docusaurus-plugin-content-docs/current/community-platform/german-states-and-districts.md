@@ -11,7 +11,7 @@ Das Paket verwendet hauptsächlich TypeScript und Prisma.
 
 Eine genaue Auflistung aller Abhängigkeiten finden Sie in der [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json) nachgelesen werden.
 
-## Wie man das Paket selbst benutzt
+## Wie man das Paket nutzt
 1. Klonen Sie das Repository von [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
 2. Erstellen Sie eine .env-Datei im Stammverzeichnis des Repositorys
 3. Bearbeiten Sie die .env-Datei, um die folgenden Variablen zu setzen:
@@ -19,8 +19,8 @@ Eine genaue Auflistung aller Abhängigkeiten finden Sie in der [package.json](ht
 # .env
 DATABASE_URL="dbtype://password:username@localhost:port/german_states_districts?schema=public"
 ```
-4. Führen Sie ```prisma migrate dev --create_state_and_district_model_and_relationship``` aus, um die beiden Tabellen zu erstellen
-5. Führen Sie ```npm start``` aus, um die erstellten Tabellen mit den deutschen Bundesländern und Bezirken aufzufüllen (oder ```npm start -- --help``` für andere Optionen)
+4. Führen Sie `prisma migrate dev --create_state_and_district_model_and_relationship` aus, um die beiden Tabellen zu erstellen
+5. Führen Sie `npm start` aus, um die erstellten Tabellen mit den deutschen Bundesländern und Bezirken aufzufüllen (oder `npm start -- --help` für andere Optionen)
 6. Prüfen Sie Ihre Datenbank (und sind hoffentlich zufrieden 😃)
 
 ## Nutzungsbeispiel
@@ -999,5 +999,5 @@ Exact route: [https://api.corona-zahlen.org/districts](https://api.corona-zahlen
 Modifications: prettified with https://jsonformatter.curiousconcept.com/  
 Licence (CC BY 4.0)
 
-## Bekannte Schwachstellen
-Uns sind (noch) keine Schwachstellen bekannt.
+## Bekannte Schwächen
+Uns sind (noch) keine Schwächen bekannt.

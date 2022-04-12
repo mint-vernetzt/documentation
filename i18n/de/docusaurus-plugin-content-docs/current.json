@@ -9,6 +9,10 @@
   },
   "sidebar.tutorialSidebar.category.Community-Platform": {
     "message": "Community-Platform",
-    "description": "The label for category Community Platform in sidebar tutorialSidebar"
+    "description": "The label for category Community-Platform in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Documentation": {
+    "message": "Documentation",
+    "description": "The label for category Documentation in sidebar tutorialSidebar"
   }
 }

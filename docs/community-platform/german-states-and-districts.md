@@ -15,12 +15,12 @@ The exact requirements can be found in the [package.json](https://github.com/min
 1. Clone the repository from [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
 2. Create a .env file in the root directory of the repository
 3. Edit the .env file to set the following variables:
-``` bin/bash
+``` bash
 # .env
 DATABASE_URL="dbtype://password:username@localhost:port/german_states_districts?schema=public"
 ```
-4. Run ```prisma migrate dev --create_state_and_district_model_and_relationship``` to create the two tables
-5. Run ```npm start``` to populate the created tables with the german states and districts (or ```npm start -- --help``` for options)
+4. Run `prisma migrate dev --create_state_and_district_model_and_relationship` to create the two tables
+5. Run `npm start` to populate the created tables with the german states and districts (or `npm start -- --help` for options)
 6. Check you database (and hopefully be happy 😃)
 
 ## Use example

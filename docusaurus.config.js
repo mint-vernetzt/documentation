@@ -71,7 +71,6 @@ const config = {
       },
       navbar: {
         title: 'MINTvernetzt',
-        hideOnScroll: true,
         logo: {
           alt: 'm',
           src: 'img/logo.svg',
@@ -112,25 +111,37 @@ const config = {
             items: [
               {
                 label: 'Welcome',
-                to: '/docs/welcome',
+                to: '/',
+              },
+              {
+                label: 'Website',
+                to: '/website/welcome',
+              },
+              {
+                label: 'Community-Platform',
+                to: '/community-platform/welcome',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Social media',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/mintvernetzt',
               },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/mintvernetzt/',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/mintvernetzt',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCVQSAkscPmmPmjYWDVuvQYg',
+              }
             ],
           },
           {
@@ -142,7 +153,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mint-vernetzt',
               },
             ],
           },

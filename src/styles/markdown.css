@@ -15,7 +15,8 @@
 
 .markdown ol li {
   list-style: decimal;
-  margin-left: 15px;
+  margin-left: 30px;
+  padding-left: 10px;
   margin-bottom: 5px;
   font-size: 1.1rem;
 }
