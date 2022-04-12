@@ -53,9 +53,9 @@ a:hover {
 }
 
 /* No edit this page button -> hide whole footer */
-.theme-doc-footer {
+/*.theme-doc-footer {
   display: none;
-}
+}*/
 
 /* GitHub Logo */
 .header-github-link:hover {
