@@ -40,6 +40,19 @@ const config = {
     ],
   ],
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+      de : {
+        htmlLang: 'de-DE',
+      }
+    },
+  },
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -139,15 +152,6 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      i18n: {
-        defaultLocale: 'en',
-        locales: ['en', 'de'],
-        localeConfigs: {
-          en: {
-            htmlLang: 'en-GB',
-          }
-        },
       },
     }),
 
