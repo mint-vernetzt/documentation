@@ -218,8 +218,8 @@
     "message": "← Zurück zum Hauptmenü",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
-  "theme.tags.tagsPageTitle": {
-    "message": "Tags",
-    "description": "The title of the tag list page"
+  "theme.blog.title": {
+    "message": "Neueste Beiträge",
+    "description": "The label for the recent posts"
   }
 }

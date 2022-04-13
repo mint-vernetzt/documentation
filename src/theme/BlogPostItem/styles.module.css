@@ -5,8 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-.iconEdit {
-  display: inline-block;
-  margin-right: 0.3em;
-  vertical-align: sub;
+.blogPostTitle {
+  font-size: 2rem;
+}
+
+.blogPostData {
+  font-size: 0.9rem;
+}
+
+.blogPostDetailsFull {
+  flex-direction: column;
 }
