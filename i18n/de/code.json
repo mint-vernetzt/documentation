@@ -219,7 +219,7 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.blog.title": {
-    "message": "Neueste Beiträge",
+    "message": "Alle Beiträge",
     "description": "The label for the recent posts"
   }
 }

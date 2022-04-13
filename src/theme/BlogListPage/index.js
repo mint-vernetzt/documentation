@@ -43,7 +43,7 @@ function BlogListPageContent(props) {
         <h1 className='text-3xl mb-0'><Translate
           id="theme.blog.title"
           description="The label for the recent posts">
-          Recent posts
+          All posts
         </Translate></h1>
 
         <Link className='underline hover:no-underline' href='/blog/tags'>
