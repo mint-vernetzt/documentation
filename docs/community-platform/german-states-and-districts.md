@@ -6,7 +6,7 @@ tags:
 ---
 
 # States and Districts data
-The [MINTvernetzt-Community-Platform](www.mint-vernetzt-community.de) provides a feature where the users can select the regions in which they are active. Therefore, we
+The [MINTvernetzt-Community-Platform](https://www.mint-vernetzt-community.de) provides a feature where the users can select the regions in which they are active. Therefore, we
 needed a list of all states and districts (in this case for Germany), which is exactly what [this package](https://github.com/mint-vernetzt/state-data-prototype) provides. It contains the Prisma schema and a script to generate the data itself.
 
 ## Dependencies

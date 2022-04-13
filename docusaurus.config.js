@@ -159,10 +159,65 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+  }),
+
+  customFields: {
+    footer: {
+      de: {
+        customLinks: [
+          {
+            label: 'Impressum',
+            href: 'https://mint-vernetzt.de/imprint/',
+          },
+          {
+            label: 'Datenschutz',
+            href: 'https://mint-vernetzt.de/privacy/',
+          },
+          {
+            label: 'Newsletter',
+            href: 'https://mint-vernetzt.de/mintvernetzt/#newsletter',
+          },
+          {
+            label: 'Kontakt',
+            href: 'https://mint-vernetzt.de/about/#contact-details',
+          },
+        ],
+        customLogo:{
+          src: 'img/bmbf.svg',
+          alt: 'Bundesministerium für Bildung und Forschung',
+          srcDark: 'img/bmbf.svg',
+        }
+      },
+      en: {
+        customLinks: [
+          {
+            label: 'Imprint',
+            href: 'https://mint-vernetzt.de/imprint/',
+          },
+          {
+            label: 'Privacy Policy',
+            href: 'https://mint-vernetzt.de/privacy/',
+          },
+          {
+            label: 'Newsletter',
+            href: 'https://mint-vernetzt.de/mintvernetzt/#newsletter',
+          },
+          {
+            label: 'Contact',
+            href: 'https://mint-vernetzt.de/about/#contact-details',
+          },
+        ],
+        customLogo:{
+          src: 'img/bmbf.svg',
+          alt: 'Bundesministerium für Bildung und Forschung',
+          srcDark: 'img/bmbf.svg',
+        }
+      }
+    }
+  },
 
   plugins: [
-    async function tailwindcss(context, options) {
+    async function tailwindcss(_context, _options) {
       return {
         name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
