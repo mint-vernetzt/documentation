@@ -31,7 +31,7 @@ export default function BlogTagsListPage(props) {
       <SearchMetadata tag="blog_tags_list" />
       <BlogLayout sidebar={sidebar}>
         <header className="mb-8">
-          <h1 className='text-3xl'>{title}</h1>
+          <h1 className='text-3xl mb-0'>{title}</h1>
           <Link className='underline hover:no-underline' href='/blog'>
             <Translate
               id="theme.common.skipToMainContent"

@@ -74,7 +74,7 @@ export default function DocTagDocListPage({tag}) {
           <div className="row">
             <main className="col col--8 col--offset-2">
               <header className="mb-8">
-                <h1 className='text-3xl'>{title}</h1>
+                <h1 className='text-3xl mb-0'>{title}</h1>
                 <Link className='underline hover:no-underline' href={tag.allTagsPath}>
                   <Translate
                     id="theme.tags.tagsPageLink"

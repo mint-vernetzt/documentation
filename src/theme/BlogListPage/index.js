@@ -40,7 +40,7 @@ function BlogListPageContent(props) {
   return (
     <BlogLayout sidebar={sidebar}>
       <header className="mb-8">
-        <h1 className='text-3xl'><Translate
+        <h1 className='text-3xl mb-0'><Translate
           id="theme.blog.title"
           description="The label for the recent posts">
           Recent posts
