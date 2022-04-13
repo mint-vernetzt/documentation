@@ -1,5 +1,6 @@
 import React from 'react';
-import LinkItem from '@theme/Footer/LinkItem';
+import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 
 export default function FooterCustomLinks({links}): JSX.Element {
   return (
@@ -7,7 +8,12 @@ export default function FooterCustomLinks({links}): JSX.Element {
       {links.map((item, i) => (
         <React.Fragment key={i}>
           <li className="pb-4 md:pb-0 md:pr-4 xl:pr-8">
-            <LinkItem item={item} />
+            <Link>
+              <Translate
+                id={item.translationId}>
+                {item.label}
+              </Translate>
+            </Link>
           </li>
         </React.Fragment>
       ))}

@@ -135,6 +135,10 @@ footer: {
 }
 ```
 
+:::caution This part is not up-to-date.
+
+:::
+
 :::caution Custom Localization Impelementation
 
 The footer config is divided into the config for the `de` and `en` language. This was necessary, because Docusaurus does not natively translate the customFields.

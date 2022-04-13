@@ -221,5 +221,21 @@
   "theme.blog.title": {
     "message": "Alle Beiträge",
     "description": "The label for the recent posts"
+  },
+  "footer.imprint": {
+    "message": "Impressum",
+    "description": "The label for the imprint link"
+  },
+  "footer.privacy": {
+    "message": "Datenschutz",
+    "description": "The label for the privacy policy link"
+  },
+  "footer.newsletter": {
+    "message": "Newsletter",
+    "description": "The label for the newsletter link"
+  },
+  "footer.contact": {
+    "message": "Kontakt",
+    "description": "The label for the contact link"
   }
 }

@@ -163,55 +163,32 @@ const config = {
 
   customFields: {
     footer: {
-      de: {
-        customLinks: [
-          {
-            label: 'Impressum',
-            href: 'https://mint-vernetzt.de/imprint/',
-          },
-          {
-            label: 'Datenschutz',
-            href: 'https://mint-vernetzt.de/privacy/',
-          },
-          {
-            label: 'Newsletter',
-            href: 'https://mint-vernetzt.de/mintvernetzt/#newsletter',
-          },
-          {
-            label: 'Kontakt',
-            href: 'https://mint-vernetzt.de/about/#contact-details',
-          },
-        ],
-        customLogo:{
-          src: 'img/bmbf.svg',
-          alt: 'Bundesministerium für Bildung und Forschung',
-          srcDark: 'img/bmbf.svg',
-        }
-      },
-      en: {
-        customLinks: [
-          {
-            label: 'Imprint',
-            href: 'https://mint-vernetzt.de/imprint/',
-          },
-          {
-            label: 'Privacy Policy',
-            href: 'https://mint-vernetzt.de/privacy/',
-          },
-          {
-            label: 'Newsletter',
-            href: 'https://mint-vernetzt.de/mintvernetzt/#newsletter',
-          },
-          {
-            label: 'Contact',
-            href: 'https://mint-vernetzt.de/about/#contact-details',
-          },
-        ],
-        customLogo:{
-          src: 'img/bmbf.svg',
-          alt: 'Bundesministerium für Bildung und Forschung',
-          srcDark: 'img/bmbf.svg',
-        }
+      customLinks: [
+        {
+          label: 'Imprint',
+          translationId: 'footer.imprint',
+          href: 'https://mint-vernetzt.de/imprint/',
+        },
+        {
+          label: 'Privacy Policy',
+          translationId: 'footer.privacy',
+          href: 'https://mint-vernetzt.de/privacy/',
+        },
+        {
+          label: 'Newsletter',
+          translationId: 'footer.newsletter',
+          href: 'https://mint-vernetzt.de/mintvernetzt/#newsletter',
+        },
+        {
+          label: 'Contact',
+          translationId: 'footer.contact',
+          href: 'https://mint-vernetzt.de/about/#contact-details',
+        },
+      ],
+      customLogo:{
+        src: 'img/bmbf.svg',
+        alt: 'Bundesministerium für Bildung und Forschung',
+        srcDark: 'img/bmbf.svg',
       }
     }
   },

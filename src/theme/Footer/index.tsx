@@ -16,39 +16,24 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import FooterCustomLinks from "@site/src/theme/Footer/CustomLinks";
 
 function Footer(): JSX.Element | null {
-  const {siteConfig, i18n} = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   const {footer} = useThemeConfig();
   if (!footer) {
     return null;
   }
   const {copyright, links, logo, style} = footer;
-  if (siteConfig.customFields.footer[i18n.currentLocale]) {
-    const {customLogo, customLinks} = siteConfig.customFields.footer[i18n.currentLocale];
+  const {customLogo, customLinks} = siteConfig.customFields.footer;
 
-    return (
-      <FooterLayout
-        style={style}
-        links={links && links.length > 0 && <FooterLinks links={links} />}
-        links2={customLinks && customLinks.length > 0 && <FooterCustomLinks links={customLinks} />}
-        logo={logo && <FooterLogo logo={logo} />}
-        logo2={customLogo && <FooterLogo logo={customLogo} />}
-        copyright={copyright && <FooterCopyright copyright={copyright} />}
-      />
-    );
-  } else {
-    const {customLogo, customLinks} = siteConfig.customFields.footer.en;
-
-    return (
-      <FooterLayout
-        style={style}
-        links={links && links.length > 0 && <FooterLinks links={links} />}
-        links2={customLinks && customLinks.length > 0 && <FooterCustomLinks links={customLinks} />}
-        logo={logo && <FooterLogo logo={logo} />}
-        logo2={customLogo && <FooterLogo logo={customLogo} />}
-        copyright={copyright && <FooterCopyright copyright={copyright} />}
-      />
-    );
-  }
+  return (
+    <FooterLayout
+      style={style}
+      links={links && links.length > 0 && <FooterLinks links={links} />}
+      links2={customLinks && customLinks.length > 0 && <FooterCustomLinks links={customLinks} />}
+      logo={logo && <FooterLogo logo={logo} />}
+      logo2={customLogo && <FooterLogo logo={customLogo} />}
+      copyright={copyright && <FooterCopyright copyright={copyright} />}
+    />
+  );
 }
 
 export default React.memo(Footer);
