@@ -134,9 +134,14 @@ footer: {
   }
 }
 ```
+
+:::caution Custom Localization Impelementation
+
 The footer config is divided into the config for the `de` and `en` language. This was necessary, because Docusaurus does not natively translate the customFields.
 Instead, I built a system where the current i18n locale decides which config to use. In case that the current i18n locale is not present, the
 system will fallback to the `en` config.
+
+:::
 
 The customLogo is as can be seen from the src the logo of the [Bundesministerium für Bildung und Forschung](https://www.bmbf.de/), while
 the custom links are the links to the imprint, privacy policy, newsletter and contact page of the [MINTvernetzt website](https://mint-vernetzt.de/).
