@@ -51,11 +51,6 @@ a:hover {
   color: unset;
 }
 
-/* No edit this page button -> hide whole footer */
-/*.theme-doc-footer {
-  display: none;
-}*/
-
 /* GitHub Logo */
 .header-github-link:hover {
   opacity: 0.6;
