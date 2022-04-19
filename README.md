@@ -33,3 +33,6 @@ $ npm run serve # Serves the built website
 - The language icon was modified to be inline with the language label (tailwind probably broke this)
 - The pages in context with tagging (for the docs as well as the blogs) were redesigned to be more consistent and less cluttered
 - The footer was completely customized to match the one on the [MINTvernetzt Website](https://www.mint-vernetzt.de/)
+
+### Things that kinda broke
+- Icons next to text aren't inline anymore (tailwind probably broke this) -> fixed for language icon
