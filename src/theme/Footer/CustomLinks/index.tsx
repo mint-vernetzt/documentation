@@ -8,7 +8,7 @@ export default function FooterCustomLinks({links}): JSX.Element {
       {links.map((item, i) => (
         <React.Fragment key={i}>
           <li className="pb-4 md:pb-0 md:pr-4 xl:pr-8">
-            <Link>
+            <Link to={item.href}>
               <Translate
                 id={item.translationId}>
                 {item.label}
