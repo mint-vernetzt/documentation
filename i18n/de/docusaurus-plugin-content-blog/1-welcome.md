@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome to the MINTvernetzt developer blog
+title: Willkommen auf dem MINTvernetzt developer blog
 authors: [mintvernetzt, paul]
 tags: [welcome, blog]
 ---
