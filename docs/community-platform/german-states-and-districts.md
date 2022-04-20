@@ -14,17 +14,19 @@ The package mainly uses TypeScript and Prisma.
 
 The exact requirements can be found in the [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json).
 
-## How to use the package yourself
-1. Clone the repository from [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
-2. Create a .env file in the root directory of the repository
-3. Edit the .env file to set the following variables:
-``` bash
-# .env
-DATABASE_URL="dbtype://password:username@localhost:port/german_states_districts?schema=public"
+## How to use this package in the context of the MINTvernetzt-Community-Platform
+For the MINTvernetzt-Community-Platform, the package was placed in the `prisma/scripts` folder in a stripped version. Files like the README.md and the package.json were removed
+since they are not needed in the context of a bigger project.
+
+For using the project the command `make` was added to the package.json. It triggers the execution of the Makefile **(note: makefile needs to be installed for this to work)**.
+
+The Makefile contains the following steps:
+``` Makefile
+german-states-and-districts-dataset:
+	ts-node prisma/scripts/german-states-and-districts-dataset/load-german-states-and-districts.ts --verbose
 ```
-4. Run `prisma migrate dev --create_state_and_district_model_and_relationship` to create the two tables
-5. Run `npm start` to populate the created tables with the german states and districts (or `npm start -- --help` for options)
-6. Check you database (and hopefully be happy 😃)
+
+You can easily modify the behaviour by changing the command (run `ts-node prisma/scripts/german-states-and-districts-dataset/load-german-states-and-districts.ts --help` for more information). 
 
 ## Use example
 ``` bash
