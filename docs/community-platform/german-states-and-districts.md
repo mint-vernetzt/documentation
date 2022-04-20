@@ -30,8 +30,13 @@ You can easily modify the behaviour by changing the command (run `ts-node prisma
 
 ## Use example
 ``` bash
-user@host:~/.../german-states-and-districts-dataset$ npm start -- --verbose
-$ ts-node load-german-states-and-districts.ts --verbose
+user@host:~/.../german-states-and-districts-dataset$ npm run make
+
+> make
+> make
+
+ts-node prisma/scripts/german-states-and-districts-dataset/load-german-states-and-districts.ts --verbose
+prismaClient.$connect success
 Deleted 0 states and 0 districts
 Updated 0 states and 0 districts
 Created 16 states and 411 districts
@@ -992,7 +997,6 @@ All states with their districts:
     ]
   }
 ]
-Done in 2.78s.
 ```
 
 ## Sources
