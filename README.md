@@ -25,8 +25,9 @@ $ npm run serve # Serves the built website
 - Use with tailwind (custom plugin)
 - Docs-only mode (see [docs-only mode](https://docusaurus.io/docs/docs-introduction#docs-only-mode))
 - The dark mode was disabled (contrast with the primary color was not sufficient)
+- Enabled the "Edit this page" button
 - Localization was added (de, en)
-- Versioning was added (currently only "Next" version)#
+- Versioning was added (currently only "Next" version)
 - Custom fields for the footer were added (to support the customisations)
 
 #### Swizzling
