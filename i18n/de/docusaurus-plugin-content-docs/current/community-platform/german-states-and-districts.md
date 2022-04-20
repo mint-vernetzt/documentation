@@ -15,7 +15,7 @@ Das Paket verwendet hauptsächlich TypeScript und Prisma.
 
 Eine genaue Auflistung aller Abhängigkeiten finden Sie in der [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json) nachgelesen werden.
 
-## So verwenden Sie dieses Paket im Rahmen der MINTvernetzt-Community-Plattform
+## Verwendung im Rahmen der MINTvernetzt-Community-Plattform
 Für die MINTvernetzt-Community-Plattform wurde das Paket in einer gestrippten Version in den Ordner `prisma/scripts` gelegt. Dateien wie die `README.md` und die `package.json` wurden entfernt, da sie im Kontext eines größeren Projekts nicht benötigt werden.
 
 Für die Verwendung des Projekts wurde der Befehl `npm run make` in die package.json aufgenommen. Er stößt die Ausführung des Makefiles an **(Hinweis: makefile muss installiert sein, damit dies funktioniert)**.
