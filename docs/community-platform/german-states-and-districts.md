@@ -15,10 +15,10 @@ The package mainly uses TypeScript and Prisma.
 The exact requirements can be found in the [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json).
 
 ## How to use this package in the context of the MINTvernetzt-Community-Platform
-For the MINTvernetzt-Community-Platform, the package was placed in the `prisma/scripts` folder in a stripped version. Files like the README.md and the package.json were removed
+For the MINTvernetzt-Community-Platform, the package was placed in the `prisma/scripts` folder in a stripped version. Files like the `README.md` and the `package.json` were removed
 since they are not needed in the context of a bigger project.
 
-For using the project the command `make` was added to the package.json. It triggers the execution of the Makefile **(note: makefile needs to be installed for this to work)**.
+For using the project the command `npm run make` was added to the package.json. It triggers the execution of the Makefile **(note: makefile needs to be installed for this to work)**.
 
 The Makefile contains the following steps:
 ``` Makefile

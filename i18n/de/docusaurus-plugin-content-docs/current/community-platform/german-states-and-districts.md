@@ -15,17 +15,18 @@ Das Paket verwendet hauptsächlich TypeScript und Prisma.
 
 Eine genaue Auflistung aller Abhängigkeiten finden Sie in der [package.json](https://github.com/mint-vernetzt/state-data-prototype/blob/main/package.json) nachgelesen werden.
 
-## Wie man das Paket nutzt
-1. Klonen Sie das Repository von [GitHub](https://github.com/mint-vernetzt/state-data-prototype)
-2. Erstellen Sie eine .env-Datei im Stammverzeichnis des Repositorys
-3. Bearbeiten Sie die .env-Datei, um die folgenden Variablen zu setzen:
-``` bin/bash
-# .env
-DATABASE_URL="dbtype://password:username@localhost:port/german_states_districts?schema=public"
+## So verwenden Sie dieses Paket im Rahmen der MINTvernetzt-Community-Plattform
+Für die MINTvernetzt-Community-Plattform wurde das Paket in einer gestrippten Version in den Ordner `prisma/scripts` gelegt. Dateien wie die `README.md` und die `package.json` wurden entfernt, da sie im Kontext eines größeren Projekts nicht benötigt werden.
+
+Für die Verwendung des Projekts wurde der Befehl `npm run make` in die package.json aufgenommen. Er stößt die Ausführung des Makefiles an **(Hinweis: makefile muss installiert sein, damit dies funktioniert)**.
+
+Das Makefile enthält die folgenden Schritte:
+```Makefile
+deutsche-bundesländer-und-bezirke-datensatz:
+	ts-node prisma/scripts/german-states-and-districts-dataset/load-german-states-and-districts.ts --verbose
 ```
-4. Führen Sie `prisma migrate dev --create_state_and_district_model_and_relationship` aus, um die beiden Tabellen zu erstellen
-5. Führen Sie `npm start` aus, um die erstellten Tabellen mit den deutschen Bundesländern und Bezirken aufzufüllen (oder `npm start -- --help` für andere Optionen)
-6. Prüfen Sie Ihre Datenbank (und sind hoffentlich zufrieden 😃)
+
+Sie können das Verhalten leicht ändern, indem Sie den Befehl ändern (führen Sie `ts-node prisma/scripts/german-states-and-districts-dataset/load-german-states-and-districts.ts --help` für weitere Informationen aus).
 
 ## Nutzungsbeispiel
 ``` bash
